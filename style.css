@@ -1,0 +1,46 @@
+:root {
+    --primary: #9fa7ff;
+    --primary-dim: #8a95ff;
+    --primary-container: #8d98ff;
+    --on-primary: #101b8b;
+    --background: #070d1f;
+    --surface: #070d1f;
+    --surface-container: #11192e;
+    --surface-container-low: #0c1326;
+    --surface-container-high: #171f36;
+    --surface-container-highest: #1c253e;
+    --on-surface: #dfe4fe;
+    --on-surface-variant: #a5aac2;
+    --outline-variant: rgba(65, 71, 91, 0.2);
+    --tertiary: #c890ff;
+    --error: #ff6e84;
+}
+
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #070d1f 0%, #0c1326 50%, #171f36 100%);
+    background-attachment: fixed;
+    color: var(--on-surface);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}

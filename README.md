@@ -59,11 +59,3 @@ anime-explorer/
 * Filtering genre
 
 ---
-
-## 📅 Milestone 1 Status
-
-* ✅ Project idea selected
-* ✅ API selected
-* ✅ Repository structure planned
-
----
