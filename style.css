@@ -516,3 +516,136 @@ main {
     gap: 0.25rem;
     margin-top: 0.5rem;
 }
+
+footer {
+    border-top: 1px solid var(--outline-variant);
+    padding: 5rem 0;
+    margin-top: 5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--on-surface-variant);
+    margin-bottom: 1rem;
+}
+
+.footer-copy {
+    font-size: 0.875rem;
+    color: var(--on-surface-variant);
+    opacity: 0.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-col span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(165, 170, 194, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+    color: var(--on-surface-variant);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--tertiary);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--surface-container-high);
+    border: none;
+    color: var(--on-surface-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+/* Loading Spinner */
+.loader-container {
+    grid-column: 1 / -1;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--on-surface-variant);
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--surface-container-high);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
