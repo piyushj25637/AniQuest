@@ -72,5 +72,4 @@ searchInput.addEventListener('input', (e) => {
     }, 500);
 });
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => fetchAnime());
