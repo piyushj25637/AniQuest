@@ -54,8 +54,8 @@ anime-explorer/
 
 ## 🚀 Future Enhancements
 
-* Dark mode UI
 * Searching
 * Filtering genre
+* Sorting Option
 
 ---
