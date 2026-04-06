@@ -263,35 +263,99 @@ main {
     padding: 5rem 0;
 }
 
-.section-header {
+.controls-row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--outline-variant);
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+}
+
+.genre-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.genre-chip {
+    padding: 0.4rem 1rem;
+    background: var(--surface-container-high);
+    border: 1px solid var(--outline-variant);
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--on-surface-variant);
+    font-weight: 500;
+}
+
+.genre-chip:hover {
+    border-color: var(--primary);
+    color: var(--on-surface);
+}
+
+.genre-chip.active {
+    background: var(--primary);
+    color: var(--on-primary);
+    border-color: var(--primary);
+}
+
+/* Sorting Dropdown */
+.sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sort-select {
+    background: var(--surface-container-high);
+    border: 1px solid var(--outline-variant);
+    color: var(--on-surface);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-family: inherit;
+    font-size: 0.875rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.sort-select:hover {
+    border-color: var(--primary);
+}
+
+/* Section Header */
+.section-header {
     margin-bottom: 2.5rem;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
 }
 
 .section-subtitle {
     color: var(--on-surface-variant);
-}
-
-.view-all {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: gap 0.3s;
-}
-
-.view-all:hover {
-    gap: 0.75rem;
+    font-size: 1.1rem;
 }
 
 .anime-grid {

@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>The Cinematic Archive | Explore Anime</title>
+<title>AniQuest | Explore Anime</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -52,15 +52,27 @@
 </div>
 </section>
 <main class="container">
-<section>
+<section id="content-area">
 <div class="section-header">
-<div>
-<h3 class="section-title">Trending Now</h3>
-<p class="section-subtitle">The most discussed titles in the community this week.</p>
+<h3 class="section-title" id="grid-title">Trending Now</h3>
+<p class="section-subtitle">The most discussed titles in the community.</p>
 </div>
-<a class="view-all" href="#">
-                    View All <span class="material-symbols-outlined">arrow_forward</span>
-</a>
+<div class="controls-row">
+<div class="filter-container">
+<span class="filter-label">Filters</span>
+<div class="genre-chips" id="genre-filter">
+<div class="genre-chip" data-genre="action">Action</div>
+<div class="genre-chip" data-genre="romance">Romance</div>
+<div class="genre-chip" data-genre="adventure">Adventure</div>
+</div>
+</div>
+<div class="sort-wrapper">
+<span style="font-size: 0.75rem; font-weight: 700; color: var(--on-surface-variant); text-transform: uppercase;">Sort By</span>
+<select class="sort-select" id="sort-select">
+<option value="-averageRating">Rating (High to Low)</option>
+<option value="canonicalTitle">Title (A-Z)</option>
+</select>
+</div>
 </div>
 <div class="anime-grid" id="anime-grid">
 <div class="loader-container">
@@ -73,8 +85,8 @@
 <footer>
 <div class="container footer-content">
 <div class="footer-brand">
-<div class="footer-logo">The Cinematic Archive</div>
-<p class="footer-copy">© 2026 Cinematic Archive</p>
+<div class="footer-logo">AniQuest</div>
+<p class="footer-copy">© 2026 Anime Archive</p>
 </div>
 <div class="footer-links">
 <div class="footer-col">
