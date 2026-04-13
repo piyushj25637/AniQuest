@@ -6,6 +6,8 @@ The Anime Explorer Web App is a web-based application that allows users to searc
 
 This project demonstrates the use of JavaScript for API integration, data handling using higher-order functions, and responsive UI design using CSS.
 
+**Deployed Webpage: https://ani-quest.netlify.app/**
+
 ---
 
 ## 🌐 API Used
